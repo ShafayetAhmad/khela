@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/83b7888039.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body onload="init()">
+    <!-- <button onclick="changeNo(55)">55</button> -->
+    <div class="playground">
+      <table>
+        <tr>
+          <td id="1"></td>
+          <td id="2"></td>
+          <td id="3"></td>
+        </tr>
+        <tr>
+          <td id="4"></td>
+          <td id="5"></td>
+          <td id="6"></td>
+        </tr>
+        <tr>
+          <td id="7"></td>
+          <td id="8"></td>
+          <td id="9"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="popup" id="popup">
+      <img src="img/celeb.png" alt="celebration" />
+      <i class="fa-solid fa-party-horn"></i>
+      <h2>Player Won The Game.</h2>
+      <p>Thank You</p>
+      <button id="playAgain" onclick="init()">Play Again</button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
